@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>Appie</title>
+</head>
+
+<body>
+    <!-- <span
+        class="spinner w-[50px] h-[50px] border-solid border-[3px] rounded-[50%]  fixed left-1/2 top-1/2 z-[9999999999999999]">
+    </span>
+    <div class="loader flex fixed top-0 left-0 z-[999999999] w-full h-screen ">
+        <div class="flex-1 origin-right bg-white"></div>
+        <div class="flex-1 origin-right bg-white"></div>
+        <div class="flex-1 origin-right bg-white"></div>
+    </div> -->
+
+    <section
+        class="fixed fixed-side transition-all -left-full duration-700  ease-in-out h-[100vh] min-[992px]:hidden top-0  bg-white z-[99999999] w-[290px]">
+        <section class="py-[50px] h-full px-[15px]">
+            <a href="">
+                <img src="../imgs/logo.png" loading="lazy" class="mx-auto" alt="">
+            </a>
+            <section class="flex flex-col mt-[40px]">
+                <div>
+                    <li
+                        class="flex peer justify-between home-links mb-[10px] border-[1px] border-transparent cursor-pointer pb-[10px] !border-b-[#ddd] border-b-[1px] items-center">
+                        <span class="text-[#2b70fa] font-semibold text-[14px] transition-all  block w-full">Home</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <ul class="overflow-hidden w-full h-[0] pl-[20px] transition-all duration-300 ">
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home 1
+                        </li>
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home 2
+                        </li>
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home 3
+                        </li>
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home 4
+                        </li>
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home 5
+                        </li>
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home 6
+                        </li>
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home 7
+                        </li>
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home 8
+                        </li>
+
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home 9
+                        </li>
+
+                        <li
+                            class="cursor-pointer pb-[10px] hover:text-[#2b70fa] mb-[10px] text-[14px] !border-b-[#ddd] border-b-[1px]">
+                            Home
+                            10
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <li
+                    class="flex justify-between mb-[10px] border-[1px] border-transparent cursor-pointer pb-[10px] !border-b-[#ddd] border-b-[1px] items-center">
+                    <span
+                        class=" hover:text-[#2b70fa] font-semibold text-[14px] transition-all duration-300 block w-full">Service</span>
+                </li>
+
+
+            </section>
+        </section>
+        <span
+            class="w-[40px] close flex items-center cursor-pointer justify-center text-white -right-[50px] h-[40px] rounded-[10px] bg-[#2B70FA] absolute top-[10px]">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+    </section>
+    <span
+        class="fixed min-[992px]:hidden hide cursor-crosshair bg-[#000000a6] z-[99999] modal transition-all duration-700 w-full h-screen left-0 top-0"></span>
+
+    <div class="landing bg-center h-screen bg-no-repeat relative">
+        <header class="flex header justify-between pt-[10px] max-[576px]:!pb-[15px]">
+            <section class="container  flex justify-between">
+                <section class="flex flex-1 justify-between gap-[50px] items-center">
+                    <div class="logo">
+                        <a href="">
+                            <img src="../imgs/logo-6.png" class="min-h-[30px] min-w-[120px]" alt="">
+                        </a>
+                    </div>
+                    <ul class="flex items-center links text-white gap-[30px] max-[992px]:hidden">
+                        <li
+                            class="flex relative group z-[99999999] text-[14px] cursor-pointer font-semibold  items-center gap-[10px]">
+                            Home
+                            <span class="text-[10px] ">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <ul
+                                class="absolute invisible opacity-0  group-hover:top-[calc(100%+20px)] group-hover:!opacity-[1] group-hover:!visible transition-all duration-[500ms] min-w-[200px] top-[calc(100%+30px)] rounded-[8px] bg-white p-[5px] px-[5px]">
+                                <li class="text-black font-[400]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        1</a>
+                                </li>
+                                <li class="text-black font-[400]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        2</a>
+                                </li>
+                                <li class="text-black font-[400]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        3</a>
+                                </li>
+                                <li class="text-black font-[400]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        4</a>
+                                </li>
+                                <li class="text-black font-[500]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        5</a>
+                                </li>
+                                <li class="text-black font-[500]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        6</a>
+                                </li>
+                                <li class="text-black font-[500]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        7</a>
+                                </li>
+                                <li class="text-black font-[500]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        8</a>
+                                </li>
+                                <li class="text-black font-[500]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        9</a>
+                                </li>
+                                <li class="text-black font-[500]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        Rtl</a>
+                                </li>
+                                <li class="text-black font-[500]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">Home
+                                        Dark</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="ml-[10px] text-[14px] font-semibold">Service</li>
+                        <li
+                            class="flex relative group ml-[10px] z-[99999999] text-[14px] cursor-pointer font-semibold  items-center gap-[10px]">
+                            Pages
+                            <span class="text-[10px] ">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <ul
+                                class="absolute invisible opacity-0  group-hover:top-[calc(100%+20px)] group-hover:!opacity-[1] group-hover:!visible transition-all duration-[500ms] min-w-[200px] top-[calc(100%+30px)] rounded-[8px] bg-white p-[5px] px-[5px]">
+                                <li class="text-black">
+                                    <a href=""
+                                        class="block w-full p-[10px] font-[400] transition-all duration-300 left-0 hover:left-[20px] relative">About
+                                        Us 1</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href=""
+                                        class="block w-full p-[10px] font-[400] transition-all duration-300 left-0 hover:left-[20px] relative">About
+                                        Us 2
+                                    </a>
+                                </li>
+
+                                <li class="text-black">
+                                    <a href=""
+                                        class="block w-full font-[400] p-[10px] transition-all duration-300 left-0 hover:left-[20px] relative">
+                                        Error</a>
+                                </li>
+                                <li class="text-black">
+                                    <a href=""
+                                        class="block w-full font-[400] p-[10px] transition-all duration-300 left-0 hover:left-[20px] relative">Shop</a>
+                                </li>
+
+                                <li class="text-black">
+                                    <a href=""
+                                        class="block w-full font-[400] p-[10px] transition-all duration-300 left-0 hover:left-[20px] relative">Shop
+                                        Details</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li
+                            class="ml-[10px] flex relative group z-[99999999] text-[14px] cursor-pointer font-semibold  items-center gap-[10px]">
+                            News
+                            <span class="text-[10px] text-white">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <ul
+                                class="absolute invisible opacity-0  group-hover:top-[calc(100%+20px)] group-hover:!opacity-[1] group-hover:!visible transition-all duration-[500ms] min-w-[200px] top-[calc(100%+30px)] rounded-[8px] bg-white p-[5px] px-[5px]">
+                                <li class="text-black font-[400]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">
+                                        News Page
+                                    </a>
+                                </li>
+                                <li class="text-black font-[400]">
+                                    <a href=""
+                                        class="block w-full p-[10px] transition-all duration-300 ease-out left-0 hover:left-[15px] relative">
+                                        Single Page
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="ml-[10px]  font-semibold text-[14px] ">Contact</li>
+                    </ul>
+                </section>
+                <section class="flex flex-1 reg justify-end text-white gap-[20px]">
+                    <a href="" class="flex items-center gap-[10px] flex-row-reverse">
+                        Login
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                    <a href=""
+                        class="min-[500px]:px-[30px] max-[768px]:!p-[10px] max-[576px]:hidden whitespace-nowrap px-[20px] py-[10px] hover:bg-transparent hover:text-[#f84a60] transition-all duration-500 border-solid border-[1px] border-[#f84a60] text-[16px] rounded-[8px] bg-[#f84a60]">Get
+                        Started </a>
+                    <span
+                        class="cursor-pointer bars w-[40px] h-[40px] flex items-center justify-center text-[20px] min-[992px]:hidden"><i
+                            class="fa-solid fa-bars"></i></span>
+                </section>
+            </section>
+        </header>
+        <section
+            class="pt-[120px] max-md:!mt-[100px] h-[50vh] max-[768px]:!p-[0] flex-col gap-[10px] flex items-center justify-center">
+            <h2
+                class="text-[5.7vw] main-head max-[768px]:!text-[40px] px-[15px] leading-[1] text-center text-white font-bold">
+                <span>Mobile</span>
+                <span>Interaction</span>
+                <br>
+                <span>Designs</span>
+                <span>of</span>
+                <span>January</span>
+                <span>2022</span>
+            </h2>
+            <div class="flex flex-col t gap-[15px] items-center">
+                <p class="mt-[15px] text-center text-[18px] text-[#bbb]">Jolly good excuse my french boot super my good
+                    sir
+                    cup of
+                    <br> char richard about chinwag.
+                </p>
+                <section class="flex items-center gap-[20px]">
+                    <a href=""
+                        class="px-[35px] py-[10px] hover:bg-[#f84a60] bg-transparent hover:text-[#fff] transition-all text-white duration-500 border-solid border-[1px] border-[#808080] text-[14px] rounded-[8px]">Get
+                        a Qoute</a>
+                    <div class="flex text-white gap-[10px] cursor-pointer capitalize items-center">
+                        <span
+                            class="w-[40px] border-[#808080] h-[40px] flex border-[1px] items-center justify-center rounded-[50%] border-solid">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                        watch the trailter
+                    </div>
+                </section>
+            </div>
+            <section class="analics ">
+                <img class="absolute left-1/2 mx-auto max-[576px]:hidden w-[510px] bottom-[0%]  translate-y-1/2 -translate-x-1/2"
+                    src="../imgs/hero-thumb-6.png" alt="">
+            </section>
+        </section>
+    </div>
+    <div id="page2 ">
+        <section style="background-image: url(../imgs/shape-1.png);"
+            class="min-[576px]:pt-[24vh] bg-no-repeat bg-right-bottom relative flex-col items-center justify-center">
+            <h2
+                class="text-[#0E1133] pt-[4vh] max-[576px]:!text-[20px] max-[768px]:!text-[26px] font-[900] text-[4vw] text-center">
+                Designed with
+                <br> The applicant in mind.
+            </h2>
+            <p class="text-center my-[15px] max-[576px]:!text-[14px] text-[18px]">The full monty spiffing good time no
+                biggie cack grub
+                fantastic.</p>
+            <div
+                class="services overflow-y-hidden gap-[25px] container max-[768px]:!grid-cols-1 max-[992px]:!grid-cols-2 grid !py-[50px]">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"
+                    class="item bg-white p-[30px] px-[20px] rounded-[10px]">
+                    <div
+                        class="icone my-[30px] relative  shadow-[#7AB3FA] shadow-md  bg-gradient-to-tl from-[#377AFA] via-[#7AB3FA] mx-auto w-[70px] h-[70px] rounded-[20px]  flex items-center justify-center">
+                        <img src="../imgs/1.png" class="w-[25px] h-[25px]" loading="lazy" alt="">
+                        <span
+                            class="absolute -top-[12px] w-[30px] h-[30px] flex items-center justify-center text-white rounded-[50%] border-solid border-[2px] border-white -right-[10px] p-[10px] bg-[#377AFA]">1</span>
+                    </div>
+                    <h3 class="text-center font-semibold mt-[15px] text-[18px]  mb-[10px]">Searching</h3>
+                    <p class="text-center">Mucker plastered bugger all mate morish are.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150"
+                    class="item bg-white p-[30px] px-[20px] rounded-[10px]">
+                    <div
+                        class="icone my-[30px] shadow-md shadow-[#F7ABA0] relative bg-gradient-to-tl from-[#F8523C] via-[#F7ABA0] mx-auto w-[70px] h-[70px] rounded-[20px]  flex items-center justify-center">
+                        <img src="../imgs/2.png" class="w-[25px] h-[25px]" loading="lazy" alt="">
+                        <span
+                            class="absolute -top-[12px] w-[30px] h-[30px] flex items-center justify-center text-white rounded-[50%] border-solid border-[2px] border-white -right-[10px] p-[10px] bg-[#F8523C]">2</span>
+                    </div>
+                    <h3 class="text-center font-semibold mt-[15px] text-[18px]  mb-[10px]">Designing</h3>
+                    <p class="text-center">Mucker plastered bugger all mate morish are.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                    class="item bg-white p-[30px] px-[20px] rounded-[10px]">
+                    <div
+                        class="icone my-[30px] shadow-md relative shadow-[#92E5B7] bg-gradient-to-tl from-[#40C875] via-[#92E5B7] mx-auto w-[70px] h-[70px] rounded-[20px]  flex items-center justify-center">
+                        <img src="../imgs/3.png" class="w-[25px] h-[25px]" loading="lazy" alt="">
+                        <span
+                            class="absolute -top-[12px] w-[30px] h-[30px] flex items-center justify-center text-white rounded-[50%] border-solid border-[2px] border-white -right-[10px] p-[10px] bg-[#40C875]">3</span>
+                    </div>
+                    <h3 class="text-center font-semibold mt-[15px] text-[18px]  mb-[10px]">Building</h3>
+                    <p class="text-center">Mucker plastered bugger all mate morish are.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250"
+                    class="item bg-white p-[30px] px-[20px] rounded-[10px]">
+                    <div
+                        class="icone my-[30px] relative shadow-md  shadow-[#A139FA] bg-gradient-to-tl from-[#A139FA] via-[#A139FA]  mx-auto w-[70px] h-[70px] rounded-[20px]  flex items-center justify-center">
+                        <img src="../imgs/4.png" class="w-[25px] h-[25px]" loading="lazy" alt="">
+                        <span
+                            class="absolute -top-[12px] w-[30px] h-[30px] flex items-center justify-center text-white rounded-[50%] border-solid border-[2px] border-white -right-[10px] p-[10px] bg-[#A139FA]">4</span>
+                    </div>
+                    <h3 class="text-center font-semibold mt-[15px] text-[18px]  mb-[10px]">Suporting</h3>
+                    <p class="text-center">Mucker plastered bugger all mate morish are.</p>
+                </div>
+            </div>
+            <!-- <img src="../imgs/shape-1.png" class="absolute" loading="lazy" alt=""> -->
+        </section>
+    </div>
+    <div id="page3">
+        <section class=" overflow-x-hidden relative overflow-y-hidden bg-white z-10 !py-[50px]">
+            <img src="../imgs/shape-15.png" class="tree absolute left-1/2 z-0" alt="">
+            <h2
+                class="text-[#0E1133] pt-[4vh] leading-[1] max-[576px]:!text-[26px] font-[900] text-[3.7vw] text-center">
+                Wherever you need <br>
+                us the most
+            </h2>
+            <p class="text-center my-[15px] text-[18px] max-[576px]:!text-[14px]">The full monty spiffing good time no
+                biggie cack grub
+                fantastic.
+            </p>
+            <section
+                class="flex min-[1000px]:pl-[130px] items-center gap-[20px] max-[992px]:flex-col justify-between mt-[40px] px-[15px]">
+                <section class="flex flex-col gap-[15px] max-[576px]:w-full">
+                    <!-- 1 -->
+                    <div
+                        class="flex hover:!border-[#FF3E66] max-[768px]:!p-[15px] transition-all duration-500 px-[30px] py-[25px] rounded-[7px] border-solid border-[1px] border-black flex-col">
+                        <div class="flex gap-[10px]">
+                            <div
+                                class="min-w-[30px] h-[30px]  relative after:absolute after:w-[15px] after:h-[15px] after:bg-[#FF3E66] flex items-center justify-center after:rounded-[50%] bg-[#CA3251] rounded-[50%]">
+                            </div>
+                            <section class="flex flex-col">
+                                <h3 class="text-[22px] font-semibold max-[768px]:!text-[18px]">Well Integrated</h3>
+                                <p>The bee's knees chancer car boot absolutely.</p>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div
+                        class="flex hover:!border-[#2EACFC] transition-all duration-500 max-[768px]:!p-[15px] px-[30px] py-[25px] rounded-[7px] border-solid border-[1px] border-black flex-col">
+                        <div class="flex gap-[10px]">
+                            <div
+                                class="min-w-[30px] h-[30px] relative after:absolute after:w-[15px] after:h-[15px] after:bg-[#2EACFC] flex items-center justify-center after:rounded-[50%] bg-[#2589C8] rounded-[50%]">
+                            </div>
+                            <section class="flex flex-col ">
+                                <h3 class="text-[22px] font-semibold max-[768px]:!text-[18px]">Clean and modern Design
+                                </h3>
+                                <p>The bee's knees chancer car boot absolutely.</p>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div
+                        class="flex hover:!border-[#33C956] max-[768px]:!p-[15px] transition-all duration-500 px-[30px] py-[20px] rounded-[7px] border-solid border-[1px] border-black flex-col">
+                        <div class="flex gap-[10px]">
+                            <div
+                                class="min-w-[30px] h-[30px] relative after:absolute after:w-[15px] after:h-[15px] after:bg-[#33C956] flex items-center justify-center after:rounded-[50%] bg-[#29A045] rounded-[50%]">
+                            </div>
+                            <section class="flex flex-col">
+                                <h3 class="text-[22px] font-semibold max-[768px]:!text-[18px]">Light and dark mode</h3>
+                                <p>The bee's knees chancer car boot absolutely.</p>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <img data-aos="fade-left" src="../imgs/traffic-thumb-2.png" class="w-[500px]" loading="lazy" alt="">
+            </section>
+        </section>
+
+    </div>
+    <div id="page4">
+        <section class="container py-[50px]">
+            <h3 class="mt-[50px] mb-[20px] text-[#0E1133] font-[900] text-[30px]">How does it work</h3>
+            <p class="text-[#505056]">The full monty spiffing good time no biggie cack grub fantastic.</p>
+            <section class="mt-[20px] grid gap-[30px] features max-[768px]:!grid-cols-1">
+                <div class="h-[160px] mb-[60px] rounded-[10px] bg-white px-[30px]">
+                    <div style="box-shadow: 5px 20px 25px 1px #aeaeae5c;"
+                        class="bg-white rounded-[10px]  px-[20px] h-[200px] mt-[20px] flex flex-col !py-[40px]">
+                        <img src="../icons/counter-icon-1.svg" loading="lazy" class="mx-auto" alt="">
+                        <h3 data-score="45" class="text-[40px] font-semibold features-item text-[#0E1133] text-center">
+                            k+</h3>
+                        <p class="text-[#505056] text-center text-[14px]">Active Installation</p>
+                    </div>
+                </div>
+                <div class="h-[160px] mb-[60px] rounded-[10px] bg-white px-[30px]">
+                    <div style="box-shadow: 5px 20px 25px 1px #aeaeae5c;"
+                        class="bg-white rounded-[10px]  px-[20px] h-[200px] mt-[20px] flex flex-col !py-[40px]">
+                        <img src="../icons/counter-icon-2.svg" loading="lazy" class="mx-auto" alt="">
+                        <h3 data-score="108" class="text-[40px] font-semibold features-item text-[#0E1133] text-center">
+                            +</h3>
+                        <p class="text-[#505056] text-center text-[14px]">Active Installation</p>
+                    </div>
+                </div>
+                <div class="h-[160px] mb-[60px] rounded-[10px] bg-white px-[30px]">
+                    <div style="box-shadow: 5px 20px 25px 1px #aeaeae5c;"
+                        class="bg-white rounded-[10px]  px-[20px] h-[200px] mt-[20px] flex flex-col !py-[40px]">
+                        <img src="../icons/counter-icon-3.svg" loading="lazy" class="mx-auto" alt="">
+                        <h3 data-score="307" class="text-[40px] font-semibold features-item text-[#0E1133] text-center">
+                            +</h3>
+                        <p class="text-[#505056] text-center text-[14px]">Active Installation</p>
+                    </div>
+                </div>
+                <div class="h-[160px] mb-[60px] rounded-[10px] bg-white px-[30px]">
+                    <div style="box-shadow: 5px 20px 25px 1px #aeaeae5c;"
+                        class="bg-white rounded-[10px]  px-[20px] h-[200px] mt-[20px] flex flex-col !py-[40px]">
+                        <img src="../icons/counter-icon-4.svg" loading="lazy" class="mx-auto" alt="">
+                        <h3 data-score="725" class="text-[40px] font-semibold features-item text-[#0E1133] text-center">
+                            k+</h3>
+                        <p class="text-[#505056] text-center text-[14px]">Active Installation</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <div id="page5">
+        <section class="rateing h-[60vh] mt-[100px]">
+            <div class="swiper mySwiper cursor-grab h-full min-[992px]:!w-[900px] ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <section class="flex text-white flex-col pt-[65px] ">
+                            <img src="../icons/counter-icon-1.svg" loading="lazy"
+                                class="w-[54px] h-[54px] rounded-[50%] mx-auto" alt="">
+                            <h3 class="font-semibold">Jason Response</h3>
+                            <h5 class="text-[14px]  opacity-[0.5]">14 April 2022</h5>
+                            <h2 class="mt-[20px] min-[992px]:!w-[70%] mx-auto text-center text-[20px] px-[15px]">Why I
+                                say old
+                                chap that is spiffing
+                                lurgy
+                                Oxford cracking
+                                goal bleeder, bog-standard
+                                Harry brilliant mush a blinding shot starkers.</h2>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="flex text-white flex-col pt-[65px] ">
+                            <img src="../icons/counter-icon-1.svg" loading="lazy"
+                                class="w-[54px] h-[54px] rounded-[50%] mx-auto" alt="">
+                            <h3 class="font-semibold">Jason Response</h3>
+                            <h5 class="text-[14px]  opacity-[0.5]">14 April 2022</h5>
+                            <h2 class="mt-[20px] min-[992px]:!w-[70%] mx-auto text-center text-[20px] px-[15px]">Why I
+                                say old
+                                chap that is spiffing
+                                lurgy
+                                Oxford cracking
+                                goal bleeder, bog-standard
+                                Harry brilliant mush a blinding shot starkers.</h2>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="flex text-white flex-col pt-[65px] ">
+                            <img src="../icons/counter-icon-1.svg" loading="lazy"
+                                class="w-[54px] h-[54px] rounded-[50%] mx-auto" alt="">
+                            <h3 class="font-semibold">Jason Response</h3>
+                            <h5 class="text-[14px]  opacity-[0.5]">14 April 2022</h5>
+                            <h2 class="mt-[20px] min-[992px]:!w-[70%] mx-auto text-center text-[20px] px-[15px]">Why I
+                                say old
+                                chap that is spiffing
+                                lurgy
+                                Oxford cracking
+                                goal bleeder, bog-standard
+                                Harry brilliant mush a blinding shot starkers.</h2>
+                        </section>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next swiper-btn -translate-x-1/2 max-[992px]:!hidden !text-[16px]">
+                </div>
+                <div class="swiper-button-prev swiper-btn -translate-x-1/2 max-[992px]:!hidden !text-[16px]">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="page6">
+        <div class=" py-[80px] bg-white min-h-screen">
+            <div class="container">
+                <section class="flex max-[992px]:flex-col">
+                    <div class="flex-[3]">
+                        <section class="relative w-fit">
+                            <img src="../imgs/video-thumb-1.jpg" loading="lazy" alt="">
+                            <span
+                                class="w-[80px] video-play text-[#FF3E66] cursor-pointer h-[80px] top-1/2 left-1/2 bg-white flex items-center justify-center text-[22px]  -translate-x-1/2 -translate-y-1/2  rounded-[50%] absolute"><i
+                                    class="fa-solid fa-play"></i></span>
+                        </section>
+                        <section class="mt-[30px] pl-[40px] min-[992px]:pl-[70px]">
+                            <h2 class="text-[30px] mb-[10px] text-[#0e1133] font-[900]">Watch the two-minute
+                                video
+                                to learn how.</h2>
+                            <p class="text-[#505056]">The wireless cheesed on your bike mate zonked a load of old tosh
+                                hunky dory it's all gone
+                                to
+                                pot haggle william car boot
+                                pear shaped geeza.</p>
+                            <a href=""
+                                class="px-[30px] !py-[10px] rounded-[40px] mt-[25px] w-fit hover:bg-[#FF3E66] hover:text-white transition-all duration-500 block border-solid border-[#ddd] border-[2px]">Get
+                                Started</a>
+                        </section>
+                    </div>
+                    <div class="flex-[1]">1</div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
